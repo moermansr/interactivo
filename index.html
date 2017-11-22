@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="assets/favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">  </head>
+
+ <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">Interactivo</a>
+    </nav>
+
+    <main role="main" class="container">
+
+      <div class="starter-template">
+        <h1 class="mb-4">Cardio pulmonale resuscitatie</h1>
+        <div id="playerbox"style='position: relative; width: 100%; height: 0px; padding-bottom: 60%; margin-top: 25px;'>
+        <!--<iframe style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%' src="https://www.youtube.com/embed/JQ1WsFNQsjA?autoplay=0&showinfo=0&controls=0" frameborder="0" gesture="media" allowfullscreen></iframe>-->
+
+        <div style='position: absolute; left: 0px; top: 0px; width: 100%; height: 100%' id="player"></div>
+
+        </div>
+
+
+      <div id="question1" class="card card-inverse p-3" style="background-color: #333; border-color: #333;">
+          <h2  class="mb-4" style="text-align:left;color:#eee">Wat doe je nadat je hebt gecontroleerd of je je in een veilige omgeving bevindt?</h2>
+          <div class="btn-group btn-group-vertical" data-toggle="buttons" style="display: inline; margin-top: 15px;">
+          <label class="btn active">
+            <input type="radio" name='answer1' checked value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> <span style="white-space:normal;">  Controleren of de patiënt nog bij bewustzijn is.</span>
+          </label>
+          <label class="btn">
+            <input type="radio" name='answer1' value="2"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span style="white-space:normal;"> Begin meteen met mond op mond</span>
+          </label>
+        </div>
+
+        <button role="button" id="answer1" type="button" style="width:100%" class="btn btn-primary mt-4">Verstuur Antwoord</button>
+
+      </div>
+
+
+      <div id="question2" class="card card-inverse p-3" style="background-color: #333; border-color: #333;">
+          <h2  class="mb-4" style="text-align:left;color:#eee">Wat doe je nu?</h2>
+          <div class="btn-group btn-group-vertical" data-toggle="buttons" style="display: inline; margin-top: 15px;">
+          <label class="btn active">
+            <input type="radio" name='answer2' checked value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> <span style="white-space:normal;">  Je belt nu zelf de ambulance.</span>
+          </label>
+          <label class="btn">
+            <input type="radio" name='answer2' value="2"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span style="white-space:normal;"> Je roept de hulp in van een bijstaander.</span>
+          </label>
+        </div>
+
+        <button role="button" id="answer2" type="button" style="width:100%" class="btn btn-primary mt-4">Verstuur Antwoord</button>
+
+      </div>
+
+
+      <div id="question3" class="card card-inverse p-3" style="background-color: #333; border-color: #333;">
+          <h2  class="mb-4" style="text-align:left;color:#eee">De hulpdiensten moeten gebeld worden. Wat doe je?</h2>
+          <div class="btn-group btn-group-vertical" data-toggle="buttons" style="display: inline; margin-top: 15px;">
+          <label class="btn active">
+            <input type="radio" name='answer3' checked value="1"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> <span style="white-space:normal;">  Je laat een omstaander bellen naar 100</span>
+          </label>
+          <label class="btn">
+            <input type="radio" name='answer3' value="2"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span style="white-space:normal;"> Je laat een omstaander bellen naar 112</span>
+          </label>
+          <label class="btn">
+            <input type="radio" name='answer3' value="3"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span style="white-space:normal;"> Je laat een omstaander bellen naar 911</span>
+          </label>
+        </div>
+
+        <button role="button" id="answer3" type="button" style="width:100%" class="btn btn-primary mt-4">Verstuur Antwoord</button>
+
+      </div>
+
+      </div>
+
+    </main><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="http://www.youtube.com/player_api"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+        <script src="js/interactivo.js" type="text/javascript"></script>
+
+  </body>
+</html>
