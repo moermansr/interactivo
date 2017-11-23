@@ -43,7 +43,7 @@
 
         }
       }
-
+ 
 
 $( "#answer1" ).click(function() {
     document.getElementById("question" + current).style.display = 'none';
